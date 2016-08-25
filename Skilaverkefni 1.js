@@ -26,19 +26,11 @@ msg = “msg” er true.
 
 Ef breyta með undeifined er óskilgreind þá skilar hún error ef hún er notuð.
 
-a
-//7. Gerðu kóðann skilvirkari og rökstuddu breytinguna! 
-
-var names = ['George','Ringo','Paul','John'];
-for(var i=0,j=names.length;i<j;i++){
-console.log(names[i]);
-}
 
 //8. Hver er munurinn á for of, forEach og for in lykkju. Komdu með dæmi? 
 
-for of 
-for in
-
+forEach er notað bara í array object.
+for in fyrir properities ínní object.
 
 //9. Hvað er NaN og afhverju er eftirfarandi false? 
 
