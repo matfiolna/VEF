@@ -17,10 +17,12 @@ Vegna þess þegar maður notar == það JS gerir ekki conversion (hann tékkar 
 
 //5. Hver er munurinn á A og B? Útskýrðu hvað “use strict“ gerir. 
 
-A keyrir og B keyrir ekki. Use strict er til að tékka hvort alla breytur eru rétt skrifað, td:
+A keyrir og B keyrir ekki. Use strict er til að tjékka hvort alla breytur eru rétt skrifað, td:
 msg = “msg” undir use strict er false
 var msg;
 msg = “msg” er true.
+
+það hjálpar til við að halda kóða vel skrifuð og aðeins betri bjartsýni
 
 //6. Hver er munurinn á null og undefined í notkun? 
 
@@ -29,8 +31,31 @@ Ef breyta með undeifined er óskilgreind þá skilar hún error ef hún er notu
 
 //8. Hver er munurinn á for of, forEach og for in lykkju. Komdu með dæmi? 
 
-forEach er notað bara í array object.
-for in fyrir properities ínní object.
+for in  lykkja er notað til að auðveldlega reikna eftirfarandi array þættir og mótmæla eiginleika. 
+
+var tab = [ 'a', 'b', 'c', 'd' ];
+for (n in tab)
+{
+    document.write(tab[n]);
+}
+
+for of gerir þér kleift að auðveldlega endurtaka yfir þætti í söfnun (t.d. arra)
+
+var array = [1, 4, 5, 7, 8];
+
+for(var i of array)
+{
+    console.log(i);
+}
+
+forEach gerir lykkju á borð í hvert skipti er að sækja og flytja störf núverandi frumefni, núverandi array vísitölu og borð sem lykkja er flutt í
+
+[2, 5, 9].forEach(function(element, index, array) {
+    console.log("index [" + index + "] í borð [" +array+ "] til " + element);
+});
+
+
+
 
 //9. Hvað er NaN og afhverju er eftirfarandi false? 
 
