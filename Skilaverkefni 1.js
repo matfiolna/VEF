@@ -13,7 +13,7 @@ Vegna þess þegar maður notar == það JS gerir ekki conversion (hann tékkar 
 
 //4. Hvað eru margar global breytur í kóðanum? 
 
-2 (text og sum)
+3 (text, sum og i ínni for loopu) - breytti það eftir kennslu um föll
 
 //5. Hver er munurinn á A og B? Útskýrðu hvað “use strict“ gerir. 
 
